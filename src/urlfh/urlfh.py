@@ -8,6 +8,8 @@ This module provides file handle functionality of a resource over http
 on servers that accept ranges. The method urlopen handles basic auth
 and other auth mechanisms support by requests can be passed into the class.
 
+Example:
+
 >>> import urlfh
 >>> urlfh.open(path)
 """
@@ -86,6 +88,7 @@ class UrlFH(object):
 
         if request.status_code // 100 == 2:
             return request.content
+        raise IOError(request.status_code)
 
         return ''
 
