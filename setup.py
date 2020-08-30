@@ -3,6 +3,10 @@
 from setuptools import setup, find_packages
 
 
+desc = """
+
+
+
 setup(
     name='urlfh',
     version='0.0.2',
@@ -13,6 +17,7 @@ setup(
     download_url='https://github.com/tmeiczin/urlfh',
     description='URL file handle',
     long_description=open('README.md').read(),
+    long_description_content_type="text/markdown",
     packages=find_packages('src'),
     package_dir={'': 'src'},
     include_package_data=False,
