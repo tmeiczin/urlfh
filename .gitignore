@@ -1,0 +1,13 @@
+# ignore 
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# ignore tox and pytest
+.tox
+.cache
