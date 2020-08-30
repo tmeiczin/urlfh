@@ -22,7 +22,7 @@ def urlopen(path, username=None, password=None, enforce_range_headers=True):
     auth = None
     if path.startswith('http'):
         if username:
-            auth = request.auth.HTTPBasicAuth(username, password)
+            auth = requests.auth.HTTPBasicAuth(username, password)
         return UrlFH(path, auth=auth, enforce_range_headers=enforce_range_headers)
     else:
         return open(path, 'rb')

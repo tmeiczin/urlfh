@@ -1,1 +1,1 @@
-from . urlfh import urlopen
+from . urlfh import urlopen # noqa
