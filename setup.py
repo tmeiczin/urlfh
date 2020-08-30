@@ -3,10 +3,6 @@
 from setuptools import setup, find_packages
 
 
-desc = """
-
-
-
 setup(
     name='urlfh',
     version='0.0.2',
