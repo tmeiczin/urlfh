@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='urlfh',
-    version='0.0.3',
+    version='0.0.4',
     author='Terrence Meiczinger',
     author_email='terrence72@gmail.com',
     license='LICENSE',
