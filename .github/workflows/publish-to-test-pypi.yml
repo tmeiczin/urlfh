@@ -25,12 +25,12 @@ jobs:
         --user
 
     - name: Build a source tarball
+      if:  matrix.python-version == '3.x'
       run: >-
         python -m
         pep517.build
         --source
         .
-      if: ${{ matrix.python-version }} == '3.x'
 
     - name: Build a binary wheel
       run: >-
